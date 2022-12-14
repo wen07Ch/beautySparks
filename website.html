@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+  </head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a id="liHome" href="#top" class="active" onclick="clickMenu('Home')">Home</a>
+  <a id="liMen" href="#men" onclick="clickMenu('Men')">Men</a>
+  <a id="liWomen" href="#women" onclick="clickMenu('Women')">Women</a>
+  <a id="liKids" href="#kids" onclick="clickMenu('Kids')">Children</a>
+  <a id="liCart" href="#cart" onclick="clickMenu('Cart')" style="padding-top:5px; padding-bottom:5px;"><img src="images/cart.png" class="cartStyle"></a>
+  <span id='lblCartCount' class='badge badge-warning'>0</span>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>   
+</div>
+
+<section id="top" style="padding-left:16px;">
+  <h2><BR>BEAUTYSPARKS<BR>Make it simple but significant.<BR><BR></h2>
+  
+  <table>
+    <tr>
+      <td width="11%"></td>
+      <td>      
+          <h1>Looking for a new outfit?<br>Here's your all you can look online clothing store with clothes of the latest fashion!<br>Check out our departments!</h1>        
+      </td>
+      <td width="10%"></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>        
+        <img src="images/menpic4.jpg" id="image" class="runningImg">
+      </td>
+      <td width="5%">
+      </td>
+      <td>
+        <img src="images\\model5.jpg" style=width:450px;height:400px;>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+        <img src="images\\clothes.jpg" style=width:300px;height:400px;>         
+        <h4>Cute summer outfit</h4>
+   
+      </td>
+      <td width="5%">
+      </td>
+      <td>
+        <img src="images\\clothes5.jpg" style=width:300px;height:400px;>       
+          <h4>ready for fun</h4>         
+      </td>
+      <td width="5%">
+      </td>
+      <td>
+        <img src="images\\clothes3.jpg" style=width:300px;height:400px;>      
+          <h4>The joy of dressing is an art</h4>       
+      </td>
+      <td width="5%">
+      </td>
+      <td>
+        <img src="images\\clothes4.jpg" style=width:300px;height:400px;>      
+          <h4>Fashions fade, style is eternal</h4>         
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>      
+        <h1>New Arrivals!<BR>Get it now</h1>           
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+        <img src="images\\clothes6.jpg" style=width:300px;height:400px;border-style:solid;border-width:5px;>
+        <h4>pink lily dress<BR>RM 23.50<BR><img src="images\\star.jpg" style=width:160px;height:35px;></h4>  
+        </td>
+        <td width="5%">
+        </td>
+        <td>
+          <img src="images\\clothes7.jpg" style=width:300px;height:400px;border-style:solid;border-width:5px;>
+          <h4>peach blouse+lemon yellow skirt office outfit<BR>RM 54.20<BR><img src="images\\star.jpg" style=width:160px;height:35px;></h4>  
+        </td>
+        <td width="5%">
+        </td>
+        <td>
+          <img src="images\\clothes8.jpg" style=width:300px;height:400px;border-style:solid;border-width:5px;>
+          <h4>pink lily dress<BR>RM 23.50<BR><img src="images\\star.jpg" style=width:160px;height:35px;></h4>  
+        </td>
+        <td width="5%">
+        </td>
+        <td>
+          <img src="images\\clothes9.jpg" style=width:300px;height:400px;border-style:solid;border-width:5px;>
+          <h4>pink lily dress<BR>RM 23.50<BR><img src="images\\star.jpg" style=width:160px;height:35px;></h4>                                                      
+        </td>
+      </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+      <div>
+      <img src="images\\picture.jpg" style=width:50px;height:50px;><h4 id="imgstyle"> follow us at Beauty_sparks for instant updates</h4>
+      </div>
+      </td>
+      <tr>
+        <td>
+          <img src="images\\WhatsApp-Logo.jpg" style=width:50px;height:50px;><h4 id="imgstyle"> contact us at 012345678 if encounterd any problems</h4>
+          </td>
+        </tr>
+      </tr>
+  </table>
+
+</section>
+
+<section id="men">
+  <table>
+    <tr>
+        <td>
+          
+            <div>
+              <img src="images\white.jpg" class="product" style=width:200px;height:300px;>
+              <h3> white T shirt</h3>
+              <h3> RM 45</h3>
+              <label for="qty-2">Quantity</label>
+              <input type="text" name="qtyM1" id="qtyM1" class="quantity" >
+              </div>
+              <button type="button" class="button" onclick="addToCart('W001', 'Red Dress', 'qtyM1', 100)">Add to Cart</button>           
+            </td>
+            <td width="5%"></td>
+            <td>
+              <div>
+                <img src="images\shirt.jpg" class="product" style=width:200px;height:300px;>
+                <h3> holiday shirt</h3>
+                <h3> RM 50</h3>
+                <label for="qty-2">Quantity</label>
+                <input type="text" name="qty2" id="qtyM2" class="quantity" >
+                </div>
+                <button type="button" class="button" onclick="addToCart('W002', 'Red Dress', 'qtyM2', 100)">Add to Cart</button>           
+              </td>
+              <td width="5%"></td>
+              <td>
+                <div>
+                  <img src="images\whitepolo.jpg" class="product" style=width:200px;height:300px;>
+                  <h3> Polo shirt</h3>
+                  <h3> RM 48</h3>
+                  <label for="qty-2">Quantity</label>
+                  <input type="text" name="qty3" id="qtyM3" class="quantity" >
+                  </div>
+                  <button type="button" class="button" onclick="addToCart('W003', 'Red Dress', 'qtyM3', 100)">Add to Cart</button>           
+                </td>
+                <td width="5%"></td>
+                <td>
+                  <div>
+                    <img src="images\brownjacket.jpg" class="product" style=width:200px;height:300px;>
+                    <h3> brown jacket</h3>
+                    <h3> RM 36</h3>
+                    <label for="qty-2">Quantity</label>
+                    <input type="text" name="qty3" id="qtyM4" class="quantity" >
+                    </div>
+                    <button type="button" class="button" onclick="addToCart('W004', 'Red Dress', 'qtyM4', 100)">Add to Cart</button>           
+                  </td>
+                  <td width="5%"></td>
+                  <td>
+                    <div>
+                      <img src="images\sportsshirt.jpg" class="product" style=width:200px;height:300px;>
+                      <h3> black top</h3>
+                      <h3> RM 32</h3>
+                      <label for="qty-2">Quantity</label>
+                      <input type="text" name="qty3" id="qtyM5" class="quantity" >
+                      </div>
+                      <button type="button" class="button" onclick="addToCart('W005', 'Red Dress', 'qtyM5', 100)">Add to Cart</button>           
+                    </td>
+                    <td width="5%"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <img src="images\brownjacket.jpg" class="product" style=width:200px;height:300px;>
+                        <h3> brown jacket</h3>
+                        <h3> RM 35</h3>
+                        <label for="qty-2">Quantity</label>
+                        <input type="text" name="qty3" id="qtyM6" class="quantity" >
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('W006', 'Red Dress', 'qtyM6', 100)">Add to Cart</button>           
+                      </td>
+                      <td width="5%"></td>
+                      <td>
+                        <div>
+                          <img src="images\whiteshirt.jpg" class="product" style=width:200px;height:300px;>
+                          <h3> white long sleeve</h3>
+                          <h3> RM 56</h3>
+                          <label for="qty-2">Quantity</label>
+                          <input type="text" name="qty3" id="qtyM7" class="quantity" >
+                          </div>
+                          <button type="button" class="button" onclick="addToCart('W007', 'Red Dress', 'qtyM7', 100)">Add to Cart</button>           
+                        </td>
+                        <td width="5%"></td>
+                        <td>
+                          <div>
+                            <img src="images\pantsmen.jpg" class="product" style=width:200px;height:300px;>
+                            <h3> black army pants</h3>
+                            <h3> RM 47</h3>
+                            <label for="qty-2">Quantity</label>
+                            <input type="text" name="qty3" id="qtyM8" class="quantity" >
+                            </div>
+                            <button type="button" class="button" onclick="addToCart('W008', 'Red Dress', 'qtyM8', 100)">Add to Cart</button>           
+                          </td>
+                          <td width="5%"></td>
+                          <td>
+                            <div>
+                              <img src="images\shorts.jpg" class="product" style=width:200px;height:300px;>
+                              <h3> boxers</h3>
+                              <h3> RM 31</h3>
+                              <label for="qty-2">Quantity</label>
+                              <input type="text" name="qty3" id="qtyM9" class="quantity" >
+                              </div>
+                              <button type="button" class="button" onclick="addToCart('W009', 'Red Dress', 'qtyM9', 100)">Add to Cart</button>           
+                            </td>
+                            <td width="5%"></td>
+                            <td>
+                              <div>
+                                <img src="images\clothes8.jpg" class="product" style=width:200px;height:300px;>
+                                <h3> full outfit</h3>
+                                <h3> RM 100</h3>
+                                <label for="qty-2">Quantity</label>
+                                <input type="text" name="qty3" id="qtyM10" class="quantity" >
+                                </div>
+                                <button type="button" class="button" onclick="addToCart('W010', 'Red Dress', 'qtyM10', 100)">Add to Cart</button>           
+                              </td>
+                            </tr>
+  </table>
+</section>
+
+<section id="women">
+  <table>
+    <tr>
+        <td>
+          <div>
+            <img src="images\clothes6.jpg" class="product" style=width:200px;height:300px;>
+            <h3> Full Length Dress</h3>
+            <h3> RM 100</h3>
+            <label for="qty-2">Quantity</label>
+            <input type="text" name="qty1" id="qty1" class="quantity" >
+            </div>
+            <button type="button" class="button" onclick="addToCart('W001', 'Red Dress', 'qty1', 100)">Add to Cart</button>           
+          </td>
+          <td width="5%"></td>
+        <td>
+          <div>
+            <img src="images\clothes7.jpg" class="product" style=width:200px;height:300px;>
+            <h3> Rose Marry Grown</h3>
+            <h3> RM 80</h3>
+            <label for="qty-2">Quantity</label>
+            <input type="text"name="qty2" id="qty2" class="quantity" >
+            </div>
+            <button type="button" class="button" onclick="addToCart('W002', 'Green Dress', 'qty2', 80)">Add to Cart</
+        </td>       
+        <td width="5%"></td>
+        <td>
+          <div>
+            <img src="images\woman3.png" class="product" style=width:200px;height:300px;>
+            <h3> french outfit</h3>
+            <h3> RM 130</h3>
+            <label for="qty-2">Quantity</label>
+            <input type="text"name="qty3" id="qty3" class="quantity" >
+            </div>
+            <button type="button" class="button" onclick="addToCart('W003', 'Yellow Dress', 'qty3', 75)">Add to Cart</button>       
+        </td> 
+        <td width="5%"></td>   
+        <td>
+          <div>
+            <img src="images\redsweater.jpg" class="product" style=width:200px;height:300px;>
+            <h3> red top</h3>
+            <h3> RM 37</h3>
+            <label for="qty-2">Quantity</label>
+            <input type="text"name="qty4" id="qty4" class="quantity" >
+            </div>
+            <button type="button" class="button" onclick="addToCart('W004', 'Red Dress', 'qty4', 100)">Add to Cart</button>           
+          </td>
+          <td width="5%"></td>   
+          <td>
+            <div>
+              <img src="images\blackdress.jpg" class="product" style=width:200px;height:300px;>
+              <h3> black dress</h3>
+              <h3> RM 76</h3>
+              <label for="qty-2">Quantity</label>
+              <input type="text"name="qty5" id="qty5" class="quantity" >
+              </div>
+              <button type="button" class="button" onclick="addToCart('W005', 'Red Dress', 'qty5', 100)">Add to Cart</button>           
+            </td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          <img src="images\peach.jpg" class="product" style=width:200px;height:300px;>
+          <h3> peach top</h3>
+          <h3> RM 34</h3>
+          <label for="qty-2">Quantity</label>
+          <input type="text"name="qty6" id="qty6" class="quantity" >
+          </div>
+          <button type="button" class="button" onclick="addToCart('W006', 'Red Dress', 'qty6', 100)">Add to Cart</button>           
+        </td>
+        <td width="5%"></td>  
+        <td>
+          <div>
+            <img src="images\neon.jpg" class="product" style=width:200px;height:300px;>
+            <h3> neon green top</h3>
+            <h3> RM 33</h3>
+            <label for="qty-2">Quantity</label>
+            <input type="text"name="qty7" id="qty7" class="quantity" >
+            </div>
+            <button type="button" class="button" onclick="addToCart('W007', 'Red Dress', 'qty7', 100)">Add to Cart</button>           
+          </td>
+          <td width="5%"></td>  
+          <td>
+            <div>
+              <img src="images\sweater.jpg" class="product" style=width:200px;height:300px;>
+              <h3> black jacket</h3>
+              <h3> RM 54</h3>
+              <label for="qty-2">Quantity</label>
+              <input type="text"name="qty8" id="qty8" class="quantity" >
+              </div>
+              <button type="button" class="button" onclick="addToCart('W008', 'Red Dress', 'qty8', 100)">Add to Cart</button>           
+            </td>
+            <td width="5%"></td>
+            <td>
+              <div>
+                <img src="images\blouse.jpg" class="product" style=width:200px;height:300px;>
+                <h3> white vest</h3>
+                <h3> RM 41</h3>
+                <label for="qty-2">Quantity</label>
+                <input type="text"name="qty9" id="qty9" class="quantity" >
+                </div>
+                <button type="button" class="button" onclick="addToCart('W009', 'Red Dress', 'qty9', 100)">Add to Cart</button>           
+              </td>
+              <td width="5%"></td>
+              <td>
+                <div>
+                  <img src="images\pants.jpg" class="product" style=width:200px;height:300px;>
+                  <h3> yoga pants</h3>
+                  <h3> RM 22</h3>
+                  <label for="qty-2">Quantity</label>
+                  <input type="text"name="qty10" id="WT10" class="quantity" >
+                  </div>
+                  <button type="button" class="button" onclick="addToCart('W010', 'Red Dress', 'WT10', 100)">Add to Cart</button>           
+                </td>
+      </tr>
+    </table>
+</section>
+     
+<section id="kids">
+  <table>
+    <tr>
+        <td>
+          
+            <div>
+              <img src="images\clothes9.jpg" class="product" style=width:200px;height:300px;>
+              <h3> checkers dress</h3>
+              <h3> RM 21</h3>
+              <label for="qty-2">Quantity</label>
+              <input type="text" name="qtyM1" id="qtyM1" class="quantity" >
+              </div>
+              <button type="button" class="button" onclick="addToCart('W001', 'Red Dress', 'qtyM1', 100)">Add to Cart</button>           
+            </td>
+            <td width="5%"></td>
+            <td>
+              <div>
+                <img src="images\clothes10.jpg" class="product" style=width:200px;height:300px;>
+                <h3> dining dress</h3>
+                <h3> RM 35</h3>
+                <label for="qty-2">Quantity</label>
+                <input type="text" name="qty2" id="qtyM2" class="quantity" >
+                </div>
+                <button type="button" class="button" onclick="addToCart('W002', 'Red Dress', 'qtyM2', 100)">Add to Cart</button>           
+              </td>
+              <td width="5%"></td>
+              <td>
+                <div>
+                  <img src="images\pink.jpg" class="product" style=width:200px;height:300px;>
+                  <h3> party dress</h3>
+                  <h3> RM 48</h3>
+                  <label for="qty-2">Quantity</label>
+                  <input type="text" name="qty3" id="qtyM3" class="quantity" >
+                  </div>
+                  <button type="button" class="button" onclick="addToCart('W003', 'Red Dress', 'qtyM3', 100)">Add to Cart</button>           
+                </td>
+                <td width="5%"></td>
+                <td>
+                  <div>
+                    <img src="images\blue.jpg" class="product" style=width:200px;height:300px;>
+                    <h3> long pants</h3>
+                    <h3> RM 36</h3>
+                    <label for="qty-2">Quantity</label>
+                    <input type="text" name="qty3" id="qtyM4" class="quantity" >
+                    </div>
+                    <button type="button" class="button" onclick="addToCart('W004', 'Red Dress', 'qtyM4', 100)">Add to Cart</button>           
+                  </td>
+                  <td width="5%"></td>
+                  <td>
+                    <div>
+                      <img src="images\whiteblack.jpg" class="product" style=width:200px;height:300px;>
+                      <h3> pants</h3>
+                      <h3> RM 31</h3>
+                      <label for="qty-2">Quantity</label>
+                      <input type="text" name="qty3" id="qtyM5" class="quantity" >
+                      </div>
+                      <button type="button" class="button" onclick="addToCart('W005', 'Red Dress', 'qtyM5', 100)">Add to Cart</button>           
+                    </td>
+                    <td width="5%"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <img src="images\skirt.jpg" class="product" style=width:200px;height:300px;>
+                        <h3>skirt</h3>
+                        <h3> RM 28</h3>
+                        <label for="qty-2">Quantity</label>
+                        <input type="text" name="qty3" id="qtyM6" class="quantity" >
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('W006', 'Red Dress', 'qtyM6', 100)">Add to Cart</button>           
+                      </td>
+                      <td width="5%"></td>
+                      <td>
+                        <div>
+                          <img src="images\cute.jpg" class="product" style=width:200px;height:300px;>
+                          <h3> cute outfit</h3>
+                          <h3> RM 22</h3>
+                          <label for="qty-2">Quantity</label>
+                          <input type="text" name="qty3" id="qtyM7" class="quantity" >
+                          </div>
+                          <button type="button" class="button" onclick="addToCart('W007', 'Red Dress', 'qtyM7', 100)">Add to Cart</button>           
+                        </td>
+                        <td width="5%"></td>
+                        <td>
+                          <div>
+                            <img src="images\flower.jpg" class="product" style=width:200px;height:300px;>
+                            <h3> sunflower outfit</h3>
+                            <h3> RM 45</h3>
+                            <label for="qty-2">Quantity</label>
+                            <input type="text" name="qty3" id="qtyM8" class="quantity" >
+                            </div>
+                            <button type="button" class="button" onclick="addToCart('W008', 'Red Dress', 'qtyM8', 100)">Add to Cart</button>           
+                          </td>
+                          <td width="5%"></td>
+                          <td>
+                            <div>
+                              <img src="images\cat.jpg" class="product" style=width:200px;height:300px;>
+                              <h3> cute cat</h3>
+                              <h3> RM 31</h3>
+                              <label for="qty-2">Quantity</label>
+                              <input type="text" name="qty3" id="qtyM9" class="quantity" >
+                              </div>
+                              <button type="button" class="button" onclick="addToCart('W009', 'Red Dress', 'qtyM9', 100)">Add to Cart</button>           
+                            </td>
+                            <td width="5%"></td>
+                            <td>
+                              <div>
+                                <img src="images\minnie.jpg" class="product" style=width:200px;height:300px;>
+                                <h3> pink minnie shirt</h3>
+                                <h3> RM 24</h3>
+                                <label for="qty-2">Quantity</label>
+                                <input type="text" name="qty3" id="qtyM10" class="quantity" >
+                                </div>
+                                <button type="button" class="button" onclick="addToCart('W010', 'Red Dress', 'qtyM10', 100)">Add to Cart</button>           
+                              </td>
+                            </tr>
+  </table>
+
+</section>
+
+<section id="cart">
+  <div id="site">
+    <header id="masthead">
+      <h1></h1>
+    </header>
+    <div id="content">
+      <h1>Your Shopping Cart</h1>
+      <form id="shopping-cart">
+        <!-- <form id="shopping-cart" action="cart.html"> -->
+        <table id="tblCart" class="shopping-cart">
+          <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Qty</th>
+            <th scope="col" colspan="2">Price</th>
+          </tr>
+          </thead>
+          <tbody>
+  
+          </tbody>
+        </table>
+        <p id="sub-total">
+          <strong>Grand Total</strong>: <span id="spnTotal"></span>
+        </p>
+        <!-- <ul id="shopping-cart-actions">
+          <li>
+            <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+          </li>
+          <li>
+            <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+          </li>
+          <li>
+            <a href="index.html" class="btn">Continue Shopping</a>
+          </li>
+          <li>
+            <a href="checkout.html" class="btn">Go To Checkout</a>
+          </li>
+        </ul> -->
+      </form>
+    </div>
+  </div>
+
+</section>
+
+<script type="text/javascript" src="main.js">
+ 
+</script>
+
+</body>
+</html>
